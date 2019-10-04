@@ -1,16 +1,25 @@
-import React, { useEffect } from "react";
-import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css/dist/js/materialize.min.js';
+import React, { Fragment, useEffect } from "react";
+import SearhBar from "./components/layout/SearchBar";
+import Logs from "./components/logs/Logs";
+
+import "materialize-css/dist/css/materialize.min.css";
+import M from "materialize-css/dist/js/materialize.min.js";
 
 import "./App.css";
 
 const App = () => {
-  
-  useEffect(() => {
-    M.AutoInit();
-  });
+	useEffect(() => {
+		M.AutoInit();
+	});
 
-	return <div className="App">My App</div>;
+	return (
+		<Fragment className="App">
+			<SearhBar />
+			<div className="container">
+				<Logs />
+			</div>
+		</Fragment>
+	);
 };
 
 export default App;
