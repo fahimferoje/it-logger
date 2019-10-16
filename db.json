@@ -1,11 +1,11 @@
 {
   "logs": [
     {
-      "message": "change network card",
-      "attention": false,
+      "id": 1,
+      "message": "change network card jjj",
+      "attention": true,
       "tech": "John doe",
-      "date": "2019-10-14T05:48:29.332Z",
-      "id": 1
+      "date": "2019-10-16T07:21:42.511Z"
     }
   ],
   "techs": [
